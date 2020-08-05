@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "concurrently \"php -S localhost:3001\" \"cd client && npm start\"",
+    "build": "mkdir publichtml && cd client && npm run build && mv build/* ../publichtml",
+    "deploy": "cd deploy && node clone.js && cd ../deployWorkspace/client && npm install react-scripts && npm run build && cd ../ && mkdir publichtml && mv client/build/* publichtml && node ../deploy/ssh"
+  },
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "download-git-repo": "^3.0.2",
+    "merge-audio-buffers": "^1.0.0",
+    "node-ssh": "^6.0.0",
+    "react": "^16.13.1",
+    "react-transition-group": "^4.3.0",
+    "recordrtc": "^5.5.9"
+  }
+}

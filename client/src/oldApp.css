@@ -1,0 +1,269 @@
+body {
+  font-family: Georgia, serif;
+  background-color: #b1c3e0;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+#mainContent {
+  background-image: linear-gradient(to bottom, #e0e0eb 50%, #ff8080);
+  min-height: 80vh;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.headerContainerSmall{
+  position: relative;
+  height: 20px;
+  width: 0vw;
+  text-align: center;
+  transition: width 1s, height 1s;
+}
+
+.headerContainerSmall:hover{
+  cursor: pointer;
+}
+
+.headerContainerBig {
+  position: relative;
+  text-align: center;
+  height: 8vw;
+  width: 95vw;
+  transition: width 1s, height 1s;
+}
+
+#mainHeaderBig, #mainHeaderSmall {
+  margin-bottom: 2px;
+  font-style: italic;
+  transition: font-size 1s;
+}
+
+#mainHeaderBig {
+  font-size: 6vw;
+}
+
+#mainHeaderSmall {
+  font-size: 12px;
+}
+
+.subHeader {
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+#menuButtonContainer {
+  margin: 4vw;
+}
+
+.menuButton {
+  width: 10vw;
+  border: 2px ridge black;
+  font-size: 2vw;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: #e0e0eb;
+  margin: 2.5vw;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.menuButton:hover{
+  cursor: pointer;
+  background-color: #ff8080;
+}
+
+.icon{
+  font-size: 250%;
+  padding: 10%;
+}
+
+.menuButtonLabel {
+  min-height: 6vw;
+}
+
+#appContainer{
+  margin: 2.5%;
+}
+
+#aboutBoxTabs {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.activeInfoTab{
+  background-color: lightgrey;
+  border: 2px inset black;
+  border-bottom-color: lightgrey;
+}
+
+.infoTab{
+  background-color: transparent;
+  color: darkgrey;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.activeInfoTab, .infoTab {
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 6px;
+}
+
+.infoTab:hover{
+  background-color: grey;
+  color: black;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+#aboutBoxText {
+  background-image: linear-gradient(lightgrey, transparent);
+  padding: 1% 2%;
+  border-radius: 20px;
+}
+
+input, textarea, button {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+H1 {
+  text-align: center;
+}
+
+body {
+  font: sans-serif;
+}
+
+#questionBox,
+#answerBox,
+#statsBox {
+  background-color: seashell;
+  padding: 5px;
+  border: darkred ridge 3px;
+  font-size: 34px;
+  margin: 10px auto;
+  width: 650px;
+  text-align: center;
+  transition: all .2s;
+}
+
+button, input {
+  min-width: 39px;
+  min-height: 22px;
+  transition: all .2s;
+  font-size: 14px;
+  background-color: #c9d0db;
+  padding: 5px;
+  margin: 3px;
+}
+
+button:hover, input:hover {
+  cursor: pointer;
+  background-color: lightgreen;
+  color: black;
+}
+
+td> button {
+  min-width: 68px;
+}
+
+.wrong {
+  background-color: red;
+  color: black;
+}
+
+.wrong:hover {
+  background-color: red;
+  color: black;
+}
+
+.blackNotes {
+  background-color: black;
+  color: white;
+}
+
+.whiteNotes {
+  background-color: white;
+  color: black;
+}
+
+#controlTable {
+  position: absolute;
+  top: 0px;
+  font-size: 18px;
+  transition: all 1s;
+  background: lightgrey;
+  border-right: ridge darkgrey 3px;
+  max-height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  max-width: 60%;
+  scrollbar-width: 1px;
+  /*left: Controled by JavaScript*/
+}
+
+#controlTable> div > table > tbody > tr > td {
+  text-align: center;
+  padding: 14px;
+  border: ridge 2px darkred;
+  transition: all .2s;
+  opacity: 1;
+  white-space: nowrap;
+  border-radius: 0px;
+}
+
+#controlTable> div > table > tbody > tr > td:hover {
+  cursor: pointer;
+  opacity: .65;
+}
+
+.tableLabel {
+  font-size: 26px;
+  border: lightgrey solid 2px;
+  margin: 1px;
+  padding: 14px;
+}
+
+.tableLabel:hover {
+  cursor: pointer;
+  background-color: lightgreen;
+}
+
+.activeTableLabel {
+  background-color: lightgreen;
+  border: black solid 2px;
+}
+
+.objectButtonPanels {
+  transition: all 1s;
+  border: lightgrey solid 2px;
+  background-color: seashell;
+  margin: 1vh;
+  display: inline-block;
+}
+
+.activeObjectButtonPanel {
+  transition: all 1s;
+  border: black inset 2px;
+}
+
+#menuPanel {
+  position: fixed;
+  font-size: 24px;
+  text-align: right;
+  white-space: nowrap;
+  /*left: controled by JavaScript*/
+  /*top: controled by JavaScript*/
+}
+
+#menuPanel > input {
+  display: block;
+  margin: 10px;
+  min-width: 100px;
+}

@@ -1,0 +1,118 @@
+.panelButton {
+  text-transform: capitalize;
+  font-size: 32px;
+  margin: 10px;
+  width: 64px;
+  height: 64px;
+  transition: all .5s;
+}
+
+#buttonPanel {
+  max-width: 542px;
+  transition: all .25s;
+}
+
+@media (max-width: 504px) {
+  #buttonPanel {
+    max-width: 350px;
+  }
+}
+
+.showAnswer {
+  background-color: #0cab0c;
+  animation: flashingGreen 1.5s infinite;
+  border-color: #075d07;
+  border-radius: 3px;
+}
+
+.wrongAnswer {
+  background-color: darkred !important;
+}
+
+@keyframes flashingGreen {
+    0% {background-color: #0cab0c;}
+    50% {background-color: #aee8ae;}
+    100% {background-color: #0cab0c;}
+}
+
+@keyframes flashingRed {
+    0% {background-color: #dc354540}
+    50% {background-color: #dc3545}
+    100% {background-color: #dc354540}
+}
+
+.hcenter {
+  display: flex;
+  justify-content: center;
+}
+
+.question {
+  background-color: white;
+}
+
+.question-badAnswer {
+  background-color: #8b00002e;
+}
+
+.verticalProgress {
+  display: flex;
+  flex-flow: column;
+  box-shadow: inset 0px 4px 6px #ccc;
+  margin: 1px 10px;
+  flex-grow: 1;
+  border-radius: 7px;
+}
+
+.verticalProgress > div:nth-child(2) {
+  box-shadow: inset 0px 4px 6px #ccc;
+  border-radius: 7px;
+}
+
+.verticalProgress > div {
+  transition: all .25s;
+}
+
+.progress-bar {
+  box-shadow: inset 0px 4px 6px rgba(100,100,100,0.6);
+}
+
+.vertical-div {
+  display: flex;
+  flex-flow: column;
+}
+
+.modal-90w {
+  max-width: 90% !important;
+}
+
+.errorMessage {
+  color: red;
+}
+
+.recordButtons {
+  font-size: 40px;
+  margin: 3px;
+}
+
+.recordButtonActive {
+  animation: flashingRed 1.5s infinite;
+}
+
+.dangerButtonDiv {
+  float: right;
+  display: inline;
+  float: right;
+  display: inline;
+}
+
+button {
+  margin: 1px;
+}
+
+.nav-item {
+  margin-bottom: 10px !important; /*overriding default bootstrap*/
+}
+
+.form-control-sm {
+  padding: 4px;
+}

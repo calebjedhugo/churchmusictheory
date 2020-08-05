@@ -1,0 +1,63 @@
+.answeredQuestion-exit-active, .failedQuestion-exit-active {
+  position: fixed;
+  background-color: white;
+  transform: translateX(100%) translateY(-50%) scale(.01, .01);
+  transition: transform .5s, background-color .5s;
+}
+
+.failedQuestion-exit-active {
+  background-color: #8b00002e;
+  transform: translateX(-150%) translateY(-50%) scale(.01, .01);
+}
+
+.answeredQuestion-exit-active {
+  transform: translateX(100%) translateY(-50%) scale(.01, .01);
+}
+
+.wrongAnswerNote-enter {
+  position: fixed;
+  opacity: 0;
+  color: red;
+  transform: translateX(50px);
+  transition: opacity .5s;
+}
+
+.wrongAnswerNote-enter-active {
+  position: fixed;
+  opacity: 1;
+  color: red;
+  transform: translateX(35px);
+  transition: opacity .5s;
+}
+
+.wrongAnswerNote-enter-done {
+  position: fixed;
+  opacity: 1;
+  transform: translateX(35px);
+  transition: opacity .5s;
+}
+
+.wrongAnswerNote-exit {
+  display: none;
+  position: fixed;
+  opacity: 1;
+  transform: translateX(35px);
+  transition: opacity .5s;
+}
+
+.wrongAnswerNote-exit-active {
+  display: none;
+  position: fixed;
+  opacity: 1;
+  transform: translateX(35px);
+  transition: opacity .5s;
+}
+
+.newQuestion-enter {
+  opacity: 0;
+}
+
+.newQuestion-enter-active {
+  opacity: 1;
+  transition: opacity .5s;
+}

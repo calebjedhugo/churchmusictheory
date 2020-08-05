@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/calebh6/public_html/churchmusictheory.com
+    - npm run build
+    - /bin/cp -R ./build $DEPLOYPATH/test

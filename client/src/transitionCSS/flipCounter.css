@@ -1,0 +1,35 @@
+.flipCounter {
+  font-size: 18px;
+  background-color: #0cab0c;
+  color: white;
+  margin: 1px;
+  height: 28px;
+  min-width: 47px;
+  vertical-align: top;
+}
+
+.flipCounterNew-enter {
+  transform: scaleY(0);
+  line-height: 0%;
+}
+
+.flipCounterNew-enter-active {
+  transform: scaleY(1);
+  line-height: 100%;
+  transition: transform .25s, line-height .25s;
+}
+
+.flipCounterOld-enter {
+  transform: scaleY(1);
+  line-height: 100%;
+}
+
+.flipCounterOld-enter-active {
+  transform: scaleY(0);
+  line-height: 0%;
+  transition: transform .25s, line-height .25s;
+}
+
+.flipCounterOld-exit-active {
+  display: none;
+}

@@ -1,0 +1,35 @@
+.panelButtonTrans-enter {
+  transform: scale(0, 0);
+  font-size: 0px !important;
+  margin: 0px !important;
+  width: 0px !important;
+  height: 0px !important;
+  transition: none !important;
+}
+
+.panelButtonTrans-enter-active {
+  transform: scale(1, 1);
+  font-size: 32px !important;
+  margin: 10px !important;
+  width: 64px !important;
+  height: 64px !important;
+  transition: all .25s !important;
+}
+
+/*.panelButtonTrans-exit {
+  transform: scale(1, 1);
+  font-size: 32px !important;
+  margin: 10px !important;
+  width: 64px !important;
+  height: 64px !important;
+  transition: none !important;
+}
+
+.panelButtonTrans-enter-active {
+  transform: scale(0, 0);
+  font-size: 0px !important;
+  margin: 0px !important;
+  width: 0px !important;
+  height: 0px !important;
+  transition: all .25s !important;
+}*/
